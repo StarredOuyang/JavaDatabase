@@ -1,0 +1,35 @@
+relation select test: correct
+relation project test: correct
+Exception on relation rename (-3)
+Index: 1, Size: 1
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at hw1.Relation.rename(Relation.java:82)
+	at hw1.hw2tests.testRename(hw2tests.java:129)
+	at hw1.hw2tests.main(hw2tests.java:270)
+relation join test: correct
+relation aggregate test: correct
+relation group by test: correct
+query from test: correct
+query select test: correct
+query join test: correct
+query aggregate test: correct
+query group by test: correct
+query select all test: correct
+Exception on multi join query (-3)
+No such element
+java.util.NoSuchElementException: No such element
+	at hw1.TupleDesc.nameToId(TupleDesc.java:75)
+	at hw1.Query.execute(Query.java:79)
+	at hw1.hw2tests.testMultiJoinQuery(hw2tests.java:216)
+	at hw1.hw2tests.main(hw2tests.java:410)
+query as test: correct
+Exception on query order of operations (-3)
+No such element
+java.util.NoSuchElementException: No such element
+	at hw1.TupleDesc.nameToId(TupleDesc.java:75)
+	at hw1.Query.execute(Query.java:124)
+	at hw1.hw2tests.testAllQuery(hw2tests.java:223)
+	at hw1.hw2tests.main(hw2tests.java:438)
+Total: 91 / 100
